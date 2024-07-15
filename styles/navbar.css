@@ -4,18 +4,13 @@ header {
     width: 100%;
     position: fixed;
     z-index: 10;
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 1);
-    height: 60px;
-    box-shadow: 0 0 10px lightgrey;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar {
-    padding: 0 2rem;
     margin: 0 auto;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +39,7 @@ header {
 }
 
 .nav-link:hover {
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(240, 236, 236, 0.7);
 }
 
 /* end navbar desktop */
@@ -53,6 +48,10 @@ header {
 /* start navbar mobile */
 
 @media (max-width: 750px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
     .nav-desktop {
         display: none;
     }
@@ -80,8 +79,6 @@ header {
             right: -100%;
             width: 300px;
             z-index: 11;
-            box-shadow: 0 0 10px lightgrey;
-
     }
 
     #nav-toggle:checked ~ .nav-mobile-link {
