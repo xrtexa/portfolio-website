@@ -1,32 +1,25 @@
-@media (min-width:1367px) {
-    #hero {
-        height: 800px;
-    }
-}
+@media (max-width: 820px) {
 
-@media (max-width: 750px) {
-    #hero, .project-card-wrapper, .about, #contact {
+    .container:first-of-type {
+        padding: 80px 0 0;
+    }
+
+    .container {
+        padding: 80px 0 0;
+    }
+
+    /* start hero section */
+
+    #hero {
         grid-template-columns: 1fr;
     }
-
-        h1,
-        h2,
-        h3 {
-            line-height: 2rem;
-        }
     
-        p,
-        a {
-            font-size: 0.9rem;
-            line-height: 1.5rem;
-        }
-
     .hero-txt h1:first-of-type {
-        font-size: 32px;
+        font-size: 2.5rem;
     }
 
     .hero-txt h1:nth-of-type(2) {
-        font-size: 28px;
+        font-size: 1.8rem;
     }
 
     .hero-left {
@@ -38,16 +31,44 @@
         order: 1;
     }
 
-        .project-txt {
-            padding: 1.2rem;
-        }
-
-    .container:first-of-type {
-        padding: 80px 0 0;
+    .hero-right img {
+        width: 70%;
     }
 
-    footer {
-        padding: 80px 1rem;
+    /* end hero section */
+
+
+    /* start about section */
+
+    #about {
+        grid-template-columns: 1fr;
     }
 
+    /* end about section */
+
+
+    /* start portfolio section */
+
+    .portfolio-title {
+        margin: 0 0 2rem;
+    }
+
+    .portfolio-card {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-txt {
+        padding: 0;
+    }
+
+    /* end portfolio section */
+
+
+    /* start contect section */
+    
+    #contact {
+        grid-template-columns: 1fr;
+    }
+
+    /* end contact section */
 }

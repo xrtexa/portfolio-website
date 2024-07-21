@@ -15,28 +15,17 @@
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s ease-in;
-}
-
-h1, h2, h3, p, a {
-    text-decoration: none;
-}
-
-h1, h2, h3 {
     font-family: 'Raleway';
-    line-height: 2.5rem;
 }
 
 p, a {
-    font-family: 'Roboto';
     line-height: 1.5rem;
-}
-
-.container:first-of-type {
-    padding: 0;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .container {
-    padding: 100px 0 0;
+    padding: 80px 0 100px;
 }
 
 .main-container {
@@ -58,15 +47,15 @@ p, a {
     font-family: 'Raleway';
     color: white;
     background-color: #294122;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2rem;
     border: 1px solid #294122;
     border-radius: 2px;
 }
 
 .button-link:hover {
     color: white;
-    background-color: #517e43;
-    border: 1px solid #517e43;
+    background-color: #3d7a2a;
+    border: 1px solid #3d7a2a;
 }
 
 /* button-link template */
@@ -75,29 +64,23 @@ p, a {
 /* start welcome section */
 
 #hero {
-    min-height: 680px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 3rem;
-}
-
-.hero-txt h1 {
-    margin: 0.5rem 0 ;
+    gap: 2rem;
 }
 
 .hero-txt h1:first-of-type {
-    font-size:3rem;
-    font-weight: 900;
+    font-size: 3.25rem;
     margin: 1rem 0;
 }
 
-.hero-txt h1:last-of-type {
-    font: 1.5rem;
+.hero-txt h1 {
+    font-size: 2.25rem;
 }
 
 .hero-txt p {
-    margin: 0.5rem 0 1rem;
+    margin: 1rem 0;
 }
 
 .hero-right {
@@ -114,93 +97,66 @@ p, a {
 
 /* start about section */
 
-.about {
+#about {
     display: grid;
-    grid-template-columns: 0.5fr 2fr;
+    grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    padding-right: 3rem;
+}
+
+#about h1, #about p:first-of-type, #about h2 {
+    margin: 0 0 1rem;
 }
 
 .about-left {
     background-color: #ffffff;
     opacity: 0.8;
     background-image: linear-gradient(#294122 1px, transparent 1px), linear-gradient(to right, #294122 1px, #ffffff 1px);
-    background-size: 32px 32px;
+    background-size: 23px 25px;
     background-position: center;
+    z-index: -1;
 }
 
 .about-right {
     padding: 2rem 0;
 }
 
-.about-top {
-    margin: 0 0 2rem;
-}
-
-.about-bottom ul {
-    padding: 0 0 0 1rem ;
-}
-
-.about h1 {
-    margin: 0 0 1rem;
-}
 
 /* end about section */
 
 
 /* start portfolio section */
 
-#project {
-    background-color: var(--background-color);
-    color: var(--text-color);
+.portfolio-title {
+    margin: 0 0 3rem;
 }
 
-.project-title {
-    margin: 0 0 1rem;
-    text-align: center;
-}
-
-.project-card-wrapper {
+.portfolio-card {
     display: grid;  
-    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 3rem;
     gap: 2rem;
 }
 
-.project-card {
-    border: 1px solid rgb(114, 113, 113);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.project-card img {
+.portfolio-img img {
+    box-shadow: 0px 0px 3px 0px #294122;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-.project-txt {
-    padding: 2rem;
-}
-
-.project-role {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.project-role p,
-.project-txt h2 {
-    margin: 0 0 0.5rem;
-}
-
-.project-txt p {
+.portfolio-txt p {
     margin: 0 0 1rem;
 }
 
-.project-role p {
-    font-weight: 600;
-    text-transform: capitalize;
+.portfolio-role {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.portfolio-role p {
+    margin: 0.5rem 0 1rem;
     font-size: 0.9rem;
+    font-weight: bold;
     color: rgb(59, 59, 59);
 }
 
@@ -210,10 +166,8 @@ p, a {
 /* start contact section */
 
 footer {
-    margin: 100px 0 0;
-    padding: 100px 1rem;
+    padding: 4rem 2rem;
     width: 100%;
-    min-height: 40vh;
     background-color: #294122;
 }
 
