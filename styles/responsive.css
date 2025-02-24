@@ -1,0 +1,72 @@
+@media (max-width: 820px) {
+
+    .main-container {
+        padding: 2rem;
+    }
+
+    /* start hero section */
+
+    #hero {
+        grid-template-columns: 1fr;
+    }
+    
+
+    /* end hero section */
+
+
+    /* start about section */
+
+    .about-container, .portfolio-card {
+        gap: 1rem;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-left {
+        order: 2;
+    }
+
+    .about-right {
+        order: 1;
+    }
+
+    /* end about section */
+
+
+    /* start portfolio section */
+
+    .portfolio-card {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-txt {
+        padding: 0;
+    }
+
+    /* end portfolio section */
+
+
+    /* start contect section */
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* end contact section */
+}
+
+@media (max-width: 410px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .portfolio-right h2 {
+        font-size: 1.9rem;
+    }
+}
