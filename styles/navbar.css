@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.nav-link, .logo{
+.nav-desktop .nav-link, .logo{
     color: black;
 }
 
