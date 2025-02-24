@@ -14,15 +14,13 @@
     align-items: center;
 }
 
-.navbar a {
+.nav-link, .logo{
     color: black;
 }
 
 .nav-link:hover {
     color: rgb(138, 137, 137);
 }
-
-
 
 .logo span {
     color: #0284FA;
@@ -54,14 +52,12 @@
 
     .nav-mobile-open {
         display: flex;
-        
         background-color: var(--background-color);
         flex-direction: column;
         position: fixed;
         top: 0;
         right: -100%;
-        
-        width: 80vw;
+        width: 55vw;
         z-index: 9999;
         box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     }
@@ -78,22 +74,18 @@
         flex-direction: column;
         padding: 3rem 2rem;
         gap: 2rem;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 0 20px;
         align-items: end;
         
     }
 
     .nav-mobile-open .nav-link {
-        font-size: 2rem;
-        display: flex;
-
+        font-size: 1.15rem;
     }
 
     .nav-mobile svg {
         width: 2rem;
         aspect-ratio: 1/1;
     }
-
-
-
 }
+
