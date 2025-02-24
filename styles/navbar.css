@@ -81,6 +81,7 @@
 
     .nav-mobile-open .nav-link {
         font-size: 1.15rem;
+        color: black;
     }
 
     .nav-mobile svg {
